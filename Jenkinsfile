@@ -45,7 +45,7 @@ node {
   try {
     // notifyBuild('STARTED')
 
-    def extension_name = "ableC-checkBounds"
+    def extension_name = "ableC-check"
 
     /* the full path to ableC, use parameter as-is if changed from default,
      * otherwise prepend full path to workspace */
@@ -134,14 +134,14 @@ node {
       }
     }
 
-    stage ("Test") {
-      withEnv(env) {
-        dir("extensions/${extension_name}") {
-          /* use -B option to always run tests */
-          sh "make -B test"
-        }
-      }
-    }
+//    stage ("Test") {
+//      withEnv(env) {
+//        dir("extensions/${extension_name}") {
+//          /* use -B option to always run tests */
+//          sh "make -B test"
+//        }
+//      }
+//    }
 
     /* If we've gotten all this way with a successful build, don't take up disk space */
     sh "rm -rf generated/* || true"

@@ -7,11 +7,11 @@ grammar well_definedness;
 
 import edu:umn:cs:melt:ableC:concretesyntax as cst;
 import edu:umn:cs:melt:ableC:drivers:parseAndPrint;
-import edu:umn:cs:melt:exts:ableC:checkBounds;
+import edu:umn:cs:melt:exts:ableC:check;
 
 parser extendedParser :: cst:Root {
   edu:umn:cs:melt:ableC:concretesyntax;
-  edu:umn:cs:melt:exts:ableC:checkBounds;
+  edu:umn:cs:melt:exts:ableC:check;
 } 
 
 function main

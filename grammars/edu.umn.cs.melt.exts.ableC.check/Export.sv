@@ -1,4 +1,4 @@
-grammar edu:umn:cs:melt:exts:ableC:checkBounds;
+grammar edu:umn:cs:melt:exts:ableC:check;
 
 {--
  - Here we export the concrete and abstract syntax of this extension in the
@@ -6,6 +6,6 @@ grammar edu:umn:cs:melt:exts:ableC:checkBounds;
  - grammar to a parser specification, or an extension writer can import both the
  - abstract syntax and concrete syntax of an extension by importing this grammar.
  -}
-exports edu:umn:cs:melt:exts:ableC:checkBounds:abstractsyntax;
-exports edu:umn:cs:melt:exts:ableC:checkBounds:concretesyntax;
+exports edu:umn:cs:melt:exts:ableC:check:abstractsyntax;
+exports edu:umn:cs:melt:exts:ableC:check:concretesyntax;
 
