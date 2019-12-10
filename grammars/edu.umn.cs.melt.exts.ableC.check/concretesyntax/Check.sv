@@ -7,7 +7,7 @@ imports silver:langutil only ast;
 
 imports edu:umn:cs:melt:exts:ableC:check:abstractsyntax;
 
-marking terminal CheckBounds_t 'check' lexer classes {Ckeyword};
+marking terminal CheckBounds_t 'check' lexer classes {Keyword, Global};
 
 concrete production checkTypeQualifier_c
 top::TypeQualifier_c ::= 'check'
