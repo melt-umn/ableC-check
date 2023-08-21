@@ -12,7 +12,7 @@ marking terminal CheckBounds_t 'check' lexer classes {Keyword, Global};
 concrete production checkTypeQualifier_c
 top::TypeQualifier_c ::= 'check'
 {
-  top.typeQualifiers = abs:foldQualifier([checkQualifier(location=top.location)]);
+  top.typeQualifiers = abs:foldQualifier([checkQualifier()]);
   top.mutateTypeSpecifiers = [];
 }
 
